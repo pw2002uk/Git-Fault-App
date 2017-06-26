@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Don">
+  <DataContextMoniker Name="/DonDataContext" />
+  <nestedChildShapes>
+    <classShape Id="9ce85239-6a68-45c5-8adb-ff6d3c0b2e73" absoluteBounds="0.5, 0.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DonDataContext/Main" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8061dfc4-8eea-4849-8bde-917042e5a2d7" absoluteBounds="0.51500000000000012, 1.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6dea1a9c-81db-4b1e-b965-93c7afb67d79" absoluteBounds="4.5, 0.75, 2, 7.1553369140625">
+      <DataClassMoniker Name="/DonDataContext/Data_Bit" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5d3cbe15-431e-4f2a-9d2c-1c11b681584b" absoluteBounds="4.5150000000000006, 1.21, 1.9700000000000002, 6.5953369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 1.76044840494792); (4.5 : 1.76044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DonDataContext/Main/Main_Data_Bit" />
+      <nodes>
+        <classShapeMoniker Id="9ce85239-6a68-45c5-8adb-ff6d3c0b2e73" />
+        <classShapeMoniker Id="6dea1a9c-81db-4b1e-b965-93c7afb67d79" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

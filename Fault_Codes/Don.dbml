@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Main" Class="DonDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Main.mdf;Integrated Security=True;Connect Timeout=30" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="ConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Main" Member="Mains">
+    <Type Name="Main">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Aircraft_Type" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="System_Name" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Label" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Hex_Fault_Code" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Main_Data_Bit" Member="Data_Bits" ThisKey="ID" OtherKey="FK_ID" Type="Data_Bit" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Data_Bits" Member="Data_Bits">
+    <Type Name="Data_Bit">
+      <Column Name="FK_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Bit9_SDI" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Bit10_SDI" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Bit11_Data" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Bit12_Data" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Bit13_Data" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Bit14_Data" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Bit15_Data" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Bit16_Data" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Bit17_Data" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Bit18_Data" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Bit19_Data" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Bit20_Data" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Bit21_Data" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Bit22_Data" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Bit23_Data" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Bit24_Data" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Bit25_Data" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Bit26_Data" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Bit27_Data" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Bit28_Data" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Bit29_Data" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Bit30_SSM" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Bit31_SSM" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Bit32_Parity" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SDI_Option0" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="SDI_Option1" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="SDI_Option2" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="SDI_Option3" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="SSM_Option0" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="SSM_Option1" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="SSM_Option2" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="SSM_Option3" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Association Name="Main_Data_Bit" Member="Main" ThisKey="FK_ID" OtherKey="ID" Type="Main" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
